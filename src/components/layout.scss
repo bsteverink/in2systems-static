@@ -1,47 +1,56 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Russo+One|Ramabhadra|Archivo+Black');
+// initial variables
+@import './node_modules/bulma/sass/utilities/initial-variables';
+@import "../assets/sass/colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Abel');
+
+$size-6: 1.1rem;
 
 // Set your brand colors
+$highlight: #C89900;
+
 $primary: #4CB5F5;
 $success: #B3C100;
 $danger: #E7472E;
-$grey-dark: #34675C;
+$warning: $highlight;
+$yellow-invert: $white;
+$grey-dark: #062340;
 $white: #ffffff;
-$highlight: #C89900;
 
-$title-color: $white;
+$title-color: $grey-dark;
 $title-strong-color: $highlight;
-$subtitle-color: $white;
+$subtitle-color: $grey-dark;
 
 $purple: #8A4D76;
 $pink: #FA7C91;
-$brown: #757763;
+$brown: $grey-dark;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
-
 
 $navbar-item-color: $white;
 $navbar-item-active-color: $white;
 $navbar-item-hover-color: $white;
 $navbar-item-hover-background-color: $highlight;
+$navbar-item-img-max-height: 3.75rem;
+
+$footer-background-color: $grey-dark;
 
 // Update Bulma's global variables
-$family-sans-serif: "Ramabhadra", sans-serif;
-$family-secondary: "Archivo Black";
+$family-sans-serif: "Fjalla One", sans-serif;
+$family-secondary: "Abel";
 $grey-dark: $brown;
 $grey-light: $beige-light;
-$primary: $purple;
-$link: $pink;
+$primary: $highlight;
+$link: $highlight;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: $white;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
-
 
 // Import only what you need from Bulma
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
@@ -53,3 +62,8 @@ $input-shadow: none;
 @import "../../node_modules/bulma/sass/components/navbar.sass";
 @import "../../node_modules/bulma/sass/layout/hero.sass";
 @import "../../node_modules/bulma/sass/layout/section.sass";
+@import "../../node_modules/bulma/sass/layout/footer.sass";
+@import "../../node_modules/bulma/sass/grid/columns.sass";
+
+// Override with own styles
+@import "../assets/sass/styles.scss";
