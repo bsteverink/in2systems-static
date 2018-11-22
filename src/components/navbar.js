@@ -9,7 +9,7 @@ class Navbar extends React.Component {
             <nav className="navbar">
                 <div className="container">
                     <div className="navbar-brand">
-                    <a className="navbar-item" href="#">
+                    <a className="navbar-item" href="/">
                         <img src={logo}></img>
                     </a>
                     <span className="navbar-burger burger" data-target="navbarMenuHeroA">
@@ -20,16 +20,22 @@ class Navbar extends React.Component {
                     </div>
                     <div id="navbarMenuHeroA" className="navbar-menu">
                     <div className="navbar-end">
-                        <a className="navbar-item is-active" href="#">
+                        <a className="navbar-item is-active" href="/">
                         Home
                         </a>
-                        <a className="navbar-item" href="#">
+                        <a className="navbar-item" href="#microns">
                         Microns
                         </a>
-                        <a className="navbar-item" href="#">
-                        About
+                        <a className="navbar-item" href="#examples">
+                        Examples
                         </a>
-                        <a className="navbar-item" href="#">
+                        <a className="navbar-item" href="#technology">
+                        Technology
+                        </a>       
+                        <a className="navbar-item" href="#about">
+                        About
+                        </a>                                            
+                        <a className="navbar-item" href="#contact">
                         Contact
                         </a>
                     </div>

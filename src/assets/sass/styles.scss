@@ -2,15 +2,24 @@ body {
     font-size: $size-6;
 }
 
-p {
-    font-family: $family-secondary;
-}
-
 .call-for-action {
-    font-family: $family-secondary;
     padding: 2rem;
 }
 
 .button .icon {
     margin-top: 0.5rem;
+}
+
+.is-family-secondary {
+    font-family: $family-secondary;
+}
+
+.extra-margin-top {
+    margin-top: 2rem;
+}
+
+.is-on-bottom {
+    margin-bottom: 1rem;
+    float: right;
+    display: block;
 }

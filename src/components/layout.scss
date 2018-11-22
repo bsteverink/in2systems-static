@@ -17,6 +17,7 @@ $warning: $highlight;
 $yellow-invert: $white;
 $grey-dark: #062340;
 $white: #ffffff;
+$info: $grey-dark;
 
 $title-color: $grey-dark;
 $title-strong-color: $highlight;
@@ -35,10 +36,13 @@ $navbar-item-hover-background-color: $highlight;
 $navbar-item-img-max-height: 3.75rem;
 
 $footer-background-color: $grey-dark;
+$footer-padding: 3rem 1.5rem 3rem;
+
+$label-color: $white;
 
 // Update Bulma's global variables
-$family-sans-serif: "Fjalla One", sans-serif;
-$family-secondary: "Abel";
+$family-sans-serif: "Abel";
+$family-secondary:  "Fjalla One", sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $highlight;
@@ -59,10 +63,13 @@ $input-shadow: none;
 @import "../../node_modules/bulma/sass/elements/container.sass";
 @import "../../node_modules/bulma/sass/elements/form.sass";
 @import "../../node_modules/bulma/sass/elements/title.sass";
+@import "../../node_modules/bulma/sass/elements/box.sass";
 @import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/components/card.sass";
 @import "../../node_modules/bulma/sass/layout/hero.sass";
 @import "../../node_modules/bulma/sass/layout/section.sass";
 @import "../../node_modules/bulma/sass/layout/footer.sass";
+@import "../../node_modules/bulma/sass/grid/tiles.sass";
 @import "../../node_modules/bulma/sass/grid/columns.sass";
 
 // Override with own styles

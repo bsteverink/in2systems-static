@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'IN2SYSTEMS',
-        short_name: 'IN2SYSTEMS',
+        name: 'Microns by IN2SYSTEMS',
+        short_name: 'Microns',
         start_url: '/',
         background_color: '#062340',
         theme_color: '#062340',
@@ -25,6 +25,7 @@ module.exports = {
         icon: 'src/assets/images/micron-logo.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline'
   ],
 }

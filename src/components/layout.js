@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'IN2SYSTEMS, we help you collect, combine, analyze and present data.' },
+            { name: 'description', content: 'MICRONS, We help make information technology work for all modern businesses.' },
             { name: 'keywords', content: 'python, javascript, micro service, data' },
             { name: 'robots', content: 'noindex,nofollow'}
           ]}
