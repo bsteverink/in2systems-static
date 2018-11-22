@@ -1,0 +1,22 @@
+stages:
+- name: build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: bsteverink/in2systems-gatsby
+      registry: index.docker.io
+- name: test
+  steps:
+  - runScriptConfig:
+      image: python:latest
+      shellScript: print('test')
+- name: publish
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: bsteverink/in2systems-gatsby
+      pushRemote: true
+      registry: index.docker.io
+timeout: 60
